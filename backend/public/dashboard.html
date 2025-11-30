@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"/><title>Dashboard</title><link rel="stylesheet" href="style.css"/></head>
+<body onload="loadDashboard()">
+<div class="container">
+  <div class="card header">
+    <div>
+      <div class="logo">Student Portal</div>
+      <div id="user-email" class="small"></div>
+    </div>
+    <div>
+      <button class="btn" onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <div class="grid card">
+    <div>
+      <h3 id="user-name">Loading…</h3>
+      <div class="small" id="user-meta"></div>
+
+      <div style="margin-top:18px">
+        <strong>My Courses</strong>
+        <div id="courses" class="course-list"></div>
+        <div id="no-courses" class="empty" style="display:none">No courses registered yet</div>
+      </div>
+    </div>
+
+    <div>
+      <div><strong>Register a Course</strong>
+      <div class="small">Pick from common courses or add custom</div></div>
+
+      <div style="margin-top:12px">
+        <div class="label">Choose course</div>
+        <select id="course-select">
+          <option>Web Development</option>
+          <option>Java Programming</option>
+          <option>Data Science</option>
+          <option>Machine Learning</option>
+          <option>Database Systems</option>
+          <option>Operating Systems</option>
+        </select>
+
+        <div class="label">Or type a course name</div>
+        <input id="course-custom" placeholder="Custom course name"/>
+
+        <div style="margin-top:12px" class="center">
+          <button onclick="addCourse()" class="btn">Add Course</button>
+        </div>
+        <div id="course-msg" class="small" style="margin-top:10px;color:#ffbebe"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer card">Tip: You can remove any registered course from the list.</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
