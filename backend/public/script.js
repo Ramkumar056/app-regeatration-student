@@ -1,7 +1,7 @@
 // ======================
 // CONFIG
 // ======================
-const API = "https://app-regeatration-student.onrender.com/";  
+const API = "https://app-regegatration-student.onrender.com/";  
 // Change this to your Render backend URL when deployed
 
 
