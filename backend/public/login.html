@@ -1,26 +1,41 @@
 <!doctype html>
 <html>
-<head><meta charset="utf-8"/><title>Login</title><link rel="stylesheet" href="style.css"/></head>
+<head>
+  <meta charset="utf-8"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
 <body>
 <div class="container">
   <div class="card">
+
     <div class="header">
-      <div><strong>Login</strong><div class="small">Enter your credentials</div></div>
-      <div class="top-buttons"><a href="register.html" class="small">Create an account</a></div>
+      <div>
+        <strong>Login</strong>
+        <div class="small">Enter your credentials</div>
+      </div>
+
+      <div class="top-buttons">
+        <a href="register.html" class="small">Create an account</a>
+      </div>
     </div>
 
     <div class="form">
       <div class="label">Email</div>
       <input id="l_email" placeholder="you@example.com" />
+
       <div class="label">Password</div>
       <input id="l_password" type="password" placeholder="Your password" />
+
       <div style="margin-top:12px" class="center">
         <button onclick="loginUser()" class="btn">Login</button>
       </div>
+
       <div id="login-msg" class="small" style="margin-top:10px;color:#ffbebe"></div>
     </div>
   </div>
 </div>
+
 <script src="script.js"></script>
 </body>
 </html>
